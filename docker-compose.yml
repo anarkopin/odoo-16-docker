@@ -18,8 +18,8 @@ services:
             - ./odoo/extra-addons/:/mnt/extra-addons/
             #- ./odoo/odoo.conf:/etc/odoo/odoo.conf
             
-        #ports:
-        #    - 8069:8069
+        ports:
+            - 8069:8069
         env_file:
             - ./odoo/.env.dev
     nginx:
